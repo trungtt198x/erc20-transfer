@@ -1,0 +1,29 @@
+{
+  "name": "erc20-transfer",
+  "version": "1.0.0",
+  "description": "## localdev (on Kovan testnet)",
+  "main": "truffle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mainnet": "NODE_ENV=mainnet MONGO_PORT=27017 PORT=3000 nodemon src/index.js",
+    "kovan": "NODE_ENV=kovan MONGO_PORT=27017 PORT=3000 nodemon src/index.js"
+  },
+  "author": "Trung Trinh",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "ethereumjs-abi": "^0.6.8",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "keythereum-pure-js": "^1.1.9",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.4",
+    "truffle-hdwallet-provider-privkey": "^0.3.0",
+    "web3": "^1.2.11",
+    "web3-utils": "^1.2.11"
+  }
+}
