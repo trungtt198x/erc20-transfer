@@ -61,7 +61,7 @@ const core = {
     const lastCheckBlockNum = await lastCheckBlockModel.getLastCheckBlockNum(erc20Address, owner)
     const currentBlock = await web3.eth.getBlockNumber()
     
-    let fromBlock = lastCheckBlockNum || 19798750
+    let fromBlock = lastCheckBlockNum || 1
 
     // Ensure the "toBlock" not exceed the max 10K blocks from the "fromBlock"
     let toBlock = Number(fromBlock) + maxQueryBlocks
